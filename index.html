@@ -5,356 +5,385 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blooger</title>
-    <!-- Custom Style -->
-    <link rel="stylesheet" href="css/Style.css">
     <!-- fontawsome icons  -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- owl-Carousel min -->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- oas Animatio -->
     <link rel="stylesheet" href="./css/aos.css">
+    <!-- owl Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
+    <!-- Boosrtap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- Custom Style -->
+     <link rel="stylesheet" href="css/Style.css">
 
 </head>
 <body>
- <!-- ------------------- Navigation ------------------------ -->
-  <nav class="nav">
-      <div class="nav-menu flex-row">
-          <div class="nav-brand">
-              <a href="#">Blooger</a>
+  <!-- ------------------- Navigation ------------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/logo-black.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Serivces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+            </ul>
           </div>
-          <div class="toggle-collapse">
-              <div class="toggle-icon">
-                  <i class="fas fa-bars"></i>
-              </div>
-          </div>
-          <div>
-              <ul class="nav-items">
-                  <li class="nav-links"><a href="#">Home</a></li>
-                  <li class="nav-links"><a href="#">Category</a></li>
-                  <li class="nav-links"><a href="#">Archive</a></li>
-                  <li class="nav-links"><a href="#">Pages</a></li>
-                  <li class="nav-links"><a href="#">Contact us</a></li>
-              </ul>
-          </div>
-          <div class="social text-gray">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="m-auto">
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+              </li> -->
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-youtube"></i></a>
+            </ul>
           </div>
-      </div>
-  </nav>
+        </div>
+      </nav>
   <!-- --------- X -------- Navigation ---------- X ---------- -->
 
-  <!-- ------------------- Main Site Section --------------->
-  <main>
-      <!-- Site Title  -->
-      <section class="site-title" data-aos="fade-up" dataaos-delay="100">
-          <div class="site-background">
-              <h3>Tours & Travels</h3>
-              <h1>Amazing Place on Earth</h1>
-              <button class="btn">Explore</button>
-          </div>
-      </section>
+  <!-- ------------------ Main Carousal ---------------------- -->
+   <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/manav/car1.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/manav/car2.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/manav/car3.jpg" class="d-block w-100 h-100" alt="...">
+                <div class="carousel-caption  d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+  <!-- -----------X------- Main Carousal --------X-------------- -->
 
-      <!-- Blog Carousel -->
-      <section>
-          <div class="blog">
-              <div class="container">
-                  <div class="owl-carousel owl-theme blog-post">
-                      <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                          <img src="./assets/Blog-post/blog1.png" alt="post-1">
-                          <div class="blog-title">
-                              <h3>London Fashion week's continued the evolution</h3>
-                              <button class="btn blog-btn">Fashion</button>
-                              <span>2 minutes</span>
-                          </div>
-                      </div>
-                      <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                          <img src="./assets/Blog-post/blog2.png" alt="post-2">
-                          <div class="blog-title">
-                              <h3>London Fashion week's continued the evolution</h3>
-                              <button class="btn blog-btn">Fashion</button>
-                              <span>2 minutes</span>
-                          </div>
-                      </div>
-                      <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                          <img src="./assets/Blog-post/blog3.png" alt="post-3">
-                          <div class="blog-title">
-                              <h3>London Fashion week's continued the evolution</h3>
-                              <button class="btn blog-btn">Fashion</button>
-                              <span>2 minutes</span>
-                          </div>
-                      </div>
-                      <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                          <img src="./assets/Blog-post/blog4.png" alt="post-4">
-                          <div class="blog-title">
-                              <h3>London Fashion week's continued the evolution</h3>
-                              <button class="btn blog-btn">Fashion</button>
-                              <span>2 minutes</span>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="owl-navigation">
-                      <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left gary"></i></span>
-                      <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right gray"></i></span>
-                  </div>
+  <!-- ------------------ Cards section ----------------------- -->
+   <div class="container mt-5">
+       <div class="row g-3">
+           <div class="col-12 col-md-4">
+                <div class="card">
+                    <!-- <img src="assets/Blog-post/blog1.png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                    <i class="fas fa-campground"></i> 
+                    <h5 class="card-title">Campus</h5>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <!-- <img src="assets/Blog-post/blog1.png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h5 class="card-title">Charity</h5>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 ">
+                <div class="card">
+                    <!-- <img src="assets/Blog-post/blog1.png" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <i class="fas fa-school"></i>
+                    <h5 class="card-title">Education</h5>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- ------------X------ Cards section --------X--------------- -->
+
+  <!---------------------- About us section ------------ -->
+    <div class="container-fluid mt-5">
+       <div class="row">
+           <div class="col-md-6">
+               <img src="assets/manav/about.jpg" alt="">
+           </div>
+           <div class="col-md-6">
+               <p class="title"><span>About </span>Us</p>
+               <hr>
+               <p>Marketing and Advertising to the Military: One of the Most Attractive Consumer Segments in the U.S.</p>
+               <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
+                </p>
+                <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
+                </p>
+                <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
+                </p>
+                
+           </div>
+       </div>
+    </div>
+  <!---------------X------- About us section ------X------------- -->
+
+  <!-- -------------- Manav Sewa dal incestive -------------- -->
+  <div class="container-fluid initiative mt-5">
+    <p class="title">Manav Sewa Dal <span>Initiative</span></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia similique, quasi debitis sunt deleniti exercitationem dolorum porro ducimus. Quisquam molestias voluptates deleniti officiis consectetur quam facilis quaerat debitis optio eligendi eos laudantium adipisci illo, perferendis ea, voluptatibus maxime corrupti hic in dolorum deserunt natus. Soluta odio adipisci aperiam tempore quis quaerat nesciunt eum architecto animi, molestiae aspernatur vitae ipsam facilis. Animi dolore nobis exercitationem voluptatibus sunt a vitae esse itaque eveniet, dolorem consectetur rem maxime unde minus? Molestias, laudantium sequi reiciendis corrupti, perferendis error architecto soluta aliquam nam excepturi aperiam laboriosam commodi iste eum ipsa placeat ea adipisci quasi eaque. Sit corporis vel molestiae quia eos dignissimos reiciendis facilis magni suscipit, nesciunt ipsa fugit quibusdam, cumque incidunt nulla tenetur illum a qui optio doloribus nam excepturi minima nemo sequi. Cumque id nam voluptatem cupiditate voluptatum expedita commodi nostrum aliquid dolore eligendi debitis necessitatibus exercitationem eos fugit quisquam rerum quod, qui error quidem deserunt architecto. At eos, ratione laborum aut deleniti non temporibus facere eveniet id inventore ullam explicabo, ad dolorem voluptatum quae sapiente debitis aspernatur autem molestiae magni delectus necessitatibus. Quas neque repellat cum autem repellendus maxime animi optio voluptatem facilis! Dolore debitis eius praesentium modi molestias non fuga delectus.</p>
+  </div>
+
+  <!-- ---------X----- Manav Sewa dal incestive ------X-------- -->
+
+  <!-- -------------- Contribution toword socity ------------- -->
+  <div class="container mt-5 socity">
+    <p class="title">Work toword <span>Socity</span></p>
+      <!-- row-1 -->
+      <div class="row">
+        <!--col-1  -->
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/Blog-post/blog2.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-2 -->
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/Blog-post/blog1.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- row-2 -->
+      <div class="row">
+        <!--col-1  -->
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/Blog-post/blog2.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- col-2 -->
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="assets/Blog-post/blog1.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+
+  <!-- --------X------ Contribution toword socity -------X------ -->
+
+  <!-- ----------------- Gallary section ------------------- -->
+      <div class="container mt-5 gallery">
+        <p class="title"><span>Our </span>Gallery</p>
+          <div class="owl-carousel owl-theme">
+            <div class="item"><img src="assets/instagram/thumb-card3.png" alt=""></div>
+            <div class="item"><img src="assets/instagram/thumb-card4.png" alt=""></div>
+            <div class="item"><img src="assets/instagram/thumb-card5.png" alt=""></div>
+            <div class="item"><img src="assets/instagram/thumb-card6.png" alt=""></div>
+            <div class="item"><img src="assets/instagram/thumb-card7.png" alt=""></div>
+            <div class="item"><img src="assets/instagram/thumb-card8.png" alt=""></div>
+          </div>
+      </div>
+  <!-- ------------X----- Gallary section --------X----------- -->
+
+  <!------------------ Contact us ------------------------->
+  <div class="container mt-4 contact">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="title"><span>Contact</span> us</p>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Name" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Enter Mobile Number" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email address" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Message here"></textarea>
+         </div>
+          <button type="submit" class="btn btn-outline-warning">Send</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <!-- <img src="assets/manav/contactus.jpg" alt=""> -->
+      </div>
+    </div>
+  </div>
+
+  <!------------X------ Contact us --------X------------------>
+
+  <!-- ----------------- Footer section ----------------- -->
+  <div class="container-fluid  mt-5 g-4 footer">
+      <dvi class="row">
+          <div class="col-md-4 footer-sub">
+              <p class="subtitle">Cantact</p>
+              <div>
+                <i class="fas fa-phone-volume"></i>
+                <p>+91 96325417854</p>
+                <p>+91 96325417854</p>
+              </div>
+              <hr>
+              <div>
+                <i class="fas fa-envelope-square"></i>
+                <p>Email: office.manavdharam.org</p>
+              </div>
+              <hr>
+              <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>USA, 3280 Cabell Avenue Alexandria,<br> VA 22301</p>
               </div>
           </div>
-       </section>
-       <!--X-- Blog Carousel --X-->
-      
-       <!-- Site Contain  -->
-       <section class="container">
-           <div class="site-content">
-               <div class="posts">
-                  <div class="post-content" data-aos="fade-zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img class="img" src="./assets/Blog-post/blog1.png" alt="">
-                            </div>
-                            <div class="post-info flex-row text-gray">
-                                <span><i class="fas fa-user"></i>&nbsp;Admin&nbsp;</span>
-                                <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quibusdam deleniti numquam omnis vero deserunt quas impedit nulla dicta accusamus, tenetur quia perspiciatis aliquam aspernatur atque quod sunt, hic minus voluptates temporibus consequuntur, tempore molestiae! Tenetur enim deleniti odit.</p>
-                            <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                  </div>
-                  <hr>
-                  <div class="post-content" data-aos="fade-zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img class="img" src="./assets/Blog-post/blog2.png" alt="">
-                            </div>
-                            <div class="post-info flex-row text-gray">
-                                <span><i class="fas fa-user"></i>&nbsp;Admin&nbsp;</span>
-                                <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quibusdam deleniti numquam omnis vero deserunt quas impedit nulla dicta accusamus, tenetur quia perspiciatis aliquam aspernatur atque quod sunt, hic minus voluptates temporibus consequuntur, tempore molestiae! Tenetur enim deleniti odit.</p>
-                            <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                  </div>
-                  <hr>
-                  <div class="post-content" data-aos="fade-zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img class="img" src="./assets/Blog-post/blog3.png" alt="">
-                            </div>
-                            <div class="post-info flex-row text-gray">
-                                <span><i class="fas fa-user"></i>&nbsp;Admin&nbsp;</span>
-                                <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quibusdam deleniti numquam omnis vero deserunt quas impedit nulla dicta accusamus, tenetur quia perspiciatis aliquam aspernatur atque quod sunt, hic minus voluptates temporibus consequuntur, tempore molestiae! Tenetur enim deleniti odit.</p>
-                            <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                  </div>
-                  <hr>
-                  <div class="post-content" data-aos="fade-zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img class="img" src="./assets/Blog-post/blog4.png" alt="">
-                            </div>
-                            <div class="post-info flex-row text-gray">
-                                <span><i class="fas fa-user"></i>&nbsp;Admin&nbsp;</span>
-                                <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                <span>2 Comments</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore quibusdam deleniti numquam omnis vero deserunt quas impedit nulla dicta accusamus, tenetur quia perspiciatis aliquam aspernatur atque quod sunt, hic minus voluptates temporibus consequuntur, tempore molestiae! Tenetur enim deleniti odit.</p>
-                            <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                  </div>
-                  <!-- pagination -->
-                  <div class="pagination flex-row">
-                      <a href="#"><i class="fas fa-chevron-left"></i></a>
-                      <a href="#" class="page">1</a>
-                      <a href="#" class="page">2</a>
-                      <a href="#" class="page">3</a>
-                      <a href="#"><i class="fas fa-chevron-right"></i></a>
-                  </div>
-               </div>
-                <aside class="sidebar">
-                    <!-- category -->
-                    <div class="category">
-                        <h2>Category</h2>
-                        <ul class="category-list">
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="100"><a href="#">Software</a> <span>(05)</span></li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="200"><a href="#">Technology</a> <span>(09)</span></li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="300"><a href="#">LifeStyle</a> <span>(03)</span></li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="400"><a href="#">Shopping</a> <span>(08)</span></li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="500"><a href="#">Universe</a> <span>(07)</span></li>
-                        </ul>
-                    </div>
-                    <!-- popular post -->
-                    <div class="popular-post">
-                        <h3>Popular posts</h3>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img class="img" src="./assets/popular-post/m-blog-1.jpg" alt="">
-                                </div>
-                                <div class="post-info flex-row text-gray">
-                                    <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                    <span>2 Comments</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            </div>
-                      </div>
-                      <hr>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img class="img" src="./assets/popular-post/m-blog-2.jpg" alt="">
-                                </div>
-                                <div class="post-info flex-row text-gray">
-                                    <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                    <span>2 Comments</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            </div>
-                      </div>
-                      <hr>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img class="img" src="./assets/popular-post/m-blog-3.jpg" alt="">
-                                </div>
-                                <div class="post-info flex-row text-gray">
-                                    <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                    <span>2 Comments</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            </div>
-                      </div>
-                      <hr>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img class="img" src="./assets/popular-post/m-blog-4.jpg" alt="">
-                                </div>
-                                <div class="post-info flex-row text-gray">
-                                    <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                    <span>2 Comments</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            </div>
-                       </div>
-                       <hr>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img class="img" src="./assets/popular-post/m-blog-5.jpg" alt="">
-                                </div>
-                                <div class="post-info flex-row text-gray">
-                                    <span><i class="fas fa-calendar"></i>&nbsp;January 15 2021</span>
-                                    <span>2 Comments</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#" class="text-gray">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
-                            </div>
-                       </div>
-                       <hr>
-                    </div>
-                    <div class="newsletter">
-                        <h2>NewsLetter</h2>
-                        <div class="form-element">
-                            <form action="">
-                                <input type="text" placeholder="Email"><br>
-                                <button class="btn form-btn">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- popular tags -->
-                    <div class="popular-tags">
-                        <h2>Popular tags</h2>
-                        <div class="tags flex-row">
-                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="200">Technology</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="300">LifeStyle</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="400">Fashion</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="500">Automobile</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="600">Projects</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="700">Universe</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="800">Food</span>
-                        </div>
-                    </div>
-               </aside>
-           </div>
-       </section>
-       <!--X-- Site Contain --X-->
-  </main>
-  <!-- ----------X--------- Main Site Section ----------X--->
+          <div class="col-md-4 footer-sub">
+                <p class="subtitle">Important Links</p>
+                <div>
+                  <p><a href="https://www.manavdharam.org/">manavdharam.org</a></p>
+                </div>
+                <div>
+                  <p><a href="https://www.manavdharam.org/mission-education/">mission-education</a></p>
+                </div>
+                <hr>
+                <div>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+          </div>
+          <div class="col-md-4 footer-sub">
+              <p class="subtitle">Important Links</p>
+              <div>
+                <p><a href="https://www.manavdharam.org/">manavdharam.org</a></p>
+              </div>
+              <div>
+                <p><a href="https://www.manavdharam.org/mission-education/">mission-education</a></p>
+              </div>
+              <hr>
+              <div>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+          </div>
+      </dvi>
+  </div>
+  <!-- -----------X------ Footer section -------X---------- -->
 
-  <!-- ---------------- Footer section ----------------- -->
-   <footer class="footer">
-       <div class="container">
-           <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-               <h2>About us</h2>
-               <p class="gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quibusdam corporis? Voluptatem laborum animi ea saepe. Tempora a mollitia obcaecati.</p>
-           </div>
-           <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
-               <h2>NewsLetter</h2>
-               <p class="gray">Stay update with our latest</p>
-               <div class="form-element">
-                   <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
-               </div>
-           </div>
-           <div class="instagram" data-aos="fade-left" data-aos-delay="200">
-               <h2>Instagram</h2>
-               <div class="flex-row">
-                   <img src="./assets/instagram/thumb-card3.png" alt="insta1">
-                   <img src="./assets/instagram/thumb-card4.png" alt="insta2">
-                   <img src="./assets/instagram/thumb-card5.png" alt="insta3">
-               </div>
-               <div class="flex-row">
-                <img src="./assets/instagram/thumb-card6.png" alt="insta4">
-                <img src="./assets/instagram/thumb-card7.png" alt="insta5">
-                <img src="./assets/instagram/thumb-card8.png" alt="insta6">
-            </div>
-           </div>
-           <div class="follow" data-aos="fade-left" data-aos-delay="200">
-               <h2>Follow us</h2>
-               <p class="gray">Let us be Social</p>
-               <i class="fab fa-facebook-f"></i>
-               <i class="fab fa-twitter"></i>
-               <i class="fab fa-instagram"></i>
-               <i class="fab fa-youtube"></i>
-           </div>
-       </div>
-       <div class="rights flex-row" data-aos="zoom-in" data-aos-delay="200">
-           <h4 class="gray">Copyright &copy;2021 All rights reserved | made by Manish</h4>
-       </div>
-        <div class="move-up">
-            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
-        </div>
-   </footer>
 
-  <!-- --------X-------- Footer section ---------X-------- -->
+
+  
+
+
 
     <!-- Jquery js file -->
     <script src="js/jquery.min.js"></script>
@@ -362,7 +391,10 @@
     <script src="./js/owl.carousel.min.js"></script>
     <!-- oas Animatio -->
     <script src="./js/aos.js"></script>
-    <!-- Custom js file -->
-    <script src="js/main.js"></script>
+   <!-- Boostrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.proper.js"></script>
+     <!-- Custom js file -->
+     <script src="js/main.js"></script>
 </body>
 </html>
