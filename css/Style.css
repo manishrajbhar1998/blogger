@@ -11,9 +11,7 @@
 :root{
     --khaki: khaki; 
     --bg-hight: #1d252b;
-    --bg-dark: #24282c;
-    /* --bg-hight: #2c3238; */
-    
+    --bg-dark: #24282c;    
 }
 .title{
     color: #fff;
@@ -39,32 +37,80 @@ body{
     background-color: var(--bg-hight);
 }
 /* navbar section */
-.navbar {
-    /* box-shadow: 1px 1px 3px 1px #fff; */
-    background-color: var(--bg-hight);
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
 }
-/* main carousel section */
-.container-fluid{
-    width: 98%;
-}
-.carousel{
-    margin-top: 5.5rem;
-}
-.carousel-inner{
-    box-shadow: 1px 1px 5px 1px gray;
-}
-.carousel-item{
-    height: 88vh;
-}
-.carousel-item img{
-    height: 100%;
+/* main banner sectiop */
+.banner1,.banner2,.banner3{
+    height: 100vh;
     width: 100%;
-    opacity: 0.7;
-} 
+    position: absolute;
+    overflow: hidden;
+}
+.banner1 img,.banner2 img,.banner3 img{
+    width: 100%;
+    height: 100%;
+    animation: zoom-out 7s linear infinite;
+    opacity: 0.5;
+}
+@keyframes zoom-out{
+100%{
+        transform: scale(1.2);
+    }
+}
+
+.banner1{
+    animation: slide1 12s linear infinite;
+    
+
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1{
+    0%{visibility: visible;}
+    25%{visibility:hidden;}
+    50%{visibility: hidden;}
+    75%{visibility: hidden;}
+    100%{visibility: hidden;}
+
+}
+@keyframes slide2{
+    0%{visibility: hidden;}
+    25%{visibility:hidden;}
+    50%{visibility: visible;}
+    75%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
+@keyframes slide3{
+    0%{visibility: hidden;}
+    25%{visibility:hidden;}
+    50%{visibility: hidden;}
+    75%{visibility: hidden;}
+    100%{visibility: visible;}
+}
+.text-box{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+.text-box{
+    /* border: 2px solid red; */
+}
 
 /*  Card section */
+.cards{
+    margin-top: 110vh;
+}
 .card-body .card-title{
     color: var(--bg-hight);
+    
 }
 .card-body .fas{
     font-size: 5rem;
@@ -89,7 +135,7 @@ body{
 /* ------ Manav sewa dal initiative ------- */
 .initiative{
     /* background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../assets/manav/car1.jpg'); */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/manav/car2.jpg') center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/manav/car2.jpg');
     text-align: center;
     padding: 50px;
 }
@@ -138,7 +184,19 @@ body{
 }
 
 @media (max-width:520px) {
-
+    .banner1,.banner2,.banner3{
+        height: 50vh;
+    }
+    .text-box{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    
+    }
+    .cards{
+        margin-top: 60vh;
+    }
     .carousel-item{
         height: 50vh;
     }
@@ -148,7 +206,60 @@ body{
     .subtitle{
         font-size: 1rem;
     }
+    .initiative{
+        text-align: left;
+        padding: 10px;
+    }
 }
 
+@media (max-width:768px) {
+    .banner1,.banner2,.banner3{
+        height: 60vh;
+    }
+    .text-box{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    
+    }
+    .cards{
+        margin-top: 60vh;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .banner1,.banner2,.banner3{
+        height: 70vh;
+    }
+    .text-box{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    
+    }
+    .cards{
+        margin-top: 60vh;
+    }
+    
+}
+@media (max-width:1200px) {
+    .banner1,.banner2,.banner3{
+        height: 90vh;
+    }
+    .text-box{
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    
+    }
+    .cards{
+        margin-top: 95vh;
+    }
+    
+}
 
 
