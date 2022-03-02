@@ -47,6 +47,7 @@ body{
     width: 100%;
     position: absolute;
     overflow: hidden;
+    border: 2px solid red;
 }
 .banner1 img,.banner2 img,.banner3 img{
     width: 100%;
@@ -186,16 +187,22 @@ body{
 @media (max-width:520px) {
     .banner1,.banner2,.banner3{
         height: 50vh;
+    
+    }
+    .banner1 img,.banner2 img,.banner3 img{
+        width: 100%;
+        height: 50vh;
+        animation: zoom-out 7s linear infinite;
+        opacity: 0.5;
     }
     .text-box{
         width: 80%;
-        position: absolute;
         top: 50%;
         left: 10%;
     
     }
     .cards{
-        margin-top: 60vh;
+        margin-top: 60vh
     }
     .carousel-item{
         height: 50vh;
@@ -212,7 +219,7 @@ body{
     }
 }
 
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .banner1,.banner2,.banner3{
         height: 60vh;
     }
@@ -262,4 +269,4 @@ body{
     
 }
 
-
+ */
