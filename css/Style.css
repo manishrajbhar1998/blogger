@@ -47,7 +47,7 @@ body{
     width: 100%;
     position: absolute;
     overflow: hidden;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .banner1 img,.banner2 img,.banner3 img{
     width: 100%;
