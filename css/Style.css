@@ -33,85 +33,71 @@ button{
     font-size: 2rem;
 }
 /* ------------------------------------------ */
-body{
-    background-color: var(--bg-hight);
+.navbar{
+    background-color: #292d3a;
+    z-index: 10;
 }
 /* navbar section */
 .navbar-brand img{
     width: 50px;
     height: 50px;
+    margin-right: 10px;
 }
 /* main banner sectiop */
-.banner1,.banner2,.banner3{
-    height: 100vh;
+.banner{
+    background-color: #292d3a;
+    height: 70vh;
+    z-index: 11;
+}
+.banner::after{
+    content: "";
     width: 100%;
+    height: 80vh;
+    background-color:  #292d3a;
     position: absolute;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: skewY(5deg);
+    z-index: -1;
+    
+}
+.banner1,.banner2,.banner3{
+    width: 100%;
+    height: 75vh;
     /* border: 2px solid red; */
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .banner1 img,.banner2 img,.banner3 img{
     width: 100%;
-    height: 100%;
-    animation: zoom-out 7s linear infinite;
-    opacity: 0.5;
+    height: 70vh;
+    animation: zoom-out 20s linear infinite;
 }
 @keyframes zoom-out{
-100%{
-        transform: scale(1.2);
-    }
+    100%{transform: scale(1.2);}
+}
+/* banner-content */
+.banner-content-h1{
+    font-size: 4rem;
+    color: khaki;
+}
+.banner-content-p{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: poppins;
 }
 
-.banner1{
-    animation: slide1 12s linear infinite;
-    
 
-}
-.banner2{
-    animation: slide2 12s linear infinite;
-}
-.banner3{
-    animation: slide3 12s linear infinite;
-}
-
-@keyframes slide1{
-    0%{visibility: visible;}
-    25%{visibility:hidden;}
-    50%{visibility: hidden;}
-    75%{visibility: hidden;}
-    100%{visibility: hidden;}
-
-}
-@keyframes slide2{
-    0%{visibility: hidden;}
-    25%{visibility:hidden;}
-    50%{visibility: visible;}
-    75%{visibility: hidden;}
-    100%{visibility: hidden;}
-}
-@keyframes slide3{
-    0%{visibility: hidden;}
-    25%{visibility:hidden;}
-    50%{visibility: hidden;}
-    75%{visibility: hidden;}
-    100%{visibility: visible;}
-}
-.text-box{
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-}
-.text-box p{
-    /* border: 2px solid red; */
-    text-align: justify;
-}
 
 /*  Card section */
 .cards{
-    margin-top: 110vh;
+    margin-top: 10vh;
 }
-.card-body .card-title{
-    color: var(--bg-hight);
+
+.cards .cards-title{
+    color: #1d252b;
+    font-size: 3rem;
     
 }
 .card-body .fas{
@@ -134,15 +120,29 @@ body{
     width: 100% ;
 }
 
+/* About us section */
+.about{
+    background-color: #292d3a;
+    z-index: 10;
+    position: relative;
+}
+
+.about p{
+    /* color: #1d252b; */
+}
+
 /* ------ Manav sewa dal initiative ------- */
 .initiative{
-    /* background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../assets/manav/car1.jpg'); */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/manav/car2.jpg');
-    text-align: center;
+    background-color: #292d3a;
+    text-align: justify;
     padding: 50px;
 }
 
 /* ------ Work toword socity -------- */
+p.socity-title{
+    font-size: 3rem;
+    color: #1d252b;
+}
 .socity{
     text-align: center;
     /* border: 2px solid red; */
@@ -155,6 +155,9 @@ body{
 }
 
 /* Gallary section */
+.gallary{
+    background: #292d3a;
+}
 .gallery p{
    text-align: center;
    border-bottom: 3px dotted var(--khaki);
@@ -162,7 +165,10 @@ body{
 }
 
 .item{
-    padding: 10px;
+    transition: 0.5s ease-in;
+}
+.item:hover{
+    filter: brightness(80%);
 }
 
 /* Contact us */
@@ -186,54 +192,22 @@ body{
 
 }
 @media (max-width:1200px) {
-    .banner1,.banner2,.banner3{
-        height: 90vh;
-    }
-    .text-box{
-        width: 60%;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-    
-    }
-    .cards{
-        margin-top: 95vh;
-    }
+  
     
 }
 @media (max-width:1000px) {
-    .banner1,.banner2,.banner3{
-        height: 70vh;
-    }
-    .text-box{
-        width: 70%;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-    
-    }
-    .cards{
-        margin-top: 60vh;
-    }
+   
     
 }
 @media (max-width:768px) {
-    .banner1,.banner2,.banner3{
-        height: 60vh;
-    }
-    .text-box{
-        width: 70%;
-        position: absolute;
-        top: 50%;
-        left: 10%;
-    
-    }
-    .cards{
-        margin-top: 60vh;
-    }
+   
     
 }
 @media (max-width:520px) {
+    /* main banner */
+    .banner{
+        height: 100vh;
+    }
     .banner1,.banner2,.banner3{
         height: 50vh;
     
@@ -242,19 +216,15 @@ body{
         width: 100%;
         height: 50vh;
         animation: zoom-out 7s linear infinite;
-        opacity: 0.5;
     }
-    .text-box{
-        width: 80%;
-        top: 50%;
-        left: 10%;
-    
+    /* banner-content */
+    .banner-content-h1{
+        font-size: 2rem;
+        margin-top: 20px;
     }
-    .cards{
-        margin-top: 60vh
-    }
-    .carousel-item{
-        height: 50vh;
+    .banner-content-p{
+        font-size: 1.2rem;
+        text-align: justify;
     }
     .title{
         font-size: 2rem;

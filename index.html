@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- Boosrtap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <!-- Custom Style -->
     <link rel="stylesheet" href="css/Style.css">
 
@@ -22,7 +26,7 @@
   <!-- ------------------- Navigation ------------------------ -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/manav/logo.jpg" alt=""></a>
+          <a class="navbar-brand" href="#"><img src="assets/manav/logo.jpg" alt="">MANAV SEWA DAL</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,6 +50,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact us</a>
               </li>
+              <li class="nav-item">
+                <div id="google_element"></div>
+              </li>
+          
             </ul>
             <div class="">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -59,36 +67,48 @@
   <!-- --------- X -------- Navigation ---------- X ---------- -->
 
   <!-- ------------------ Main banner ---------------------- -->
-    <div class="container-fluid">
-      <div class="row banner1">
-          <img src="assets/manav/land1.jpg" alt="" class="p-0 m-0">
-          <div class="text-box">
-            <h1>Manav Seva dal</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus saepe molestiae voluptas quis ullam minima fuga corrupti placeat labore atque, assumenda ipsa facere sapiente magnam?</p>
+  <div class="container-fluid banner">
+    <div class="row p-sm-4">
+      <!-- col 1 -->
+      <div class="col-sm-6 banner-img">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active banner1" data-bs-interval="3000">
+              <img src="assets/manav/land1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item banner2" data-bs-interval="3000">
+              <img src="assets/manav/land2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item banner3" data-bs-interval="3000">
+              <img src="assets/manav/land3.jpg" class="d-block w-100" alt="...">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <div class="row banner2">
-          <img src="assets/manav/land2.jpg" alt="" class="p-0 m-0">
-          <div class="text-box">
-            <h1>Heading 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus saepe molestiae voluptas quis ullam minima fuga corrupti placeat labore atque, assumenda ipsa facere sapiente magnam?</p>
-          </div>
-      </div>
-
-      <div class="row banner3">
-          <img src="assets/manav/land3.jpg" alt="" class="p-0 m-0">
-          <div class="text-box">
-            <h1>Heading 3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus saepe molestiae voluptas quis ullam minima fuga corrupti placeat labore atque, assumenda ipsa facere sapiente magnam?</p>
-          </div>
+      <!-- col 2 -->
+      <div class="col-sm-6 banner-content">
+        <h1 class="banner-content-h1 mt-3">Manav Sewa Dal</h1>
+        <hr>
+        <p class="banner-content-p mt-4">Service is the basic mantra for the development of humanity</p>
+        <p class="banner-content-p mt-4">Let us walk from darkness to light</p>
+        <p class="banner-content-p mt-4">Let us walk from untruth to truth.</p>
+        <p class="banner-content-p mt-4">Let us walk from the mortal to the eternal.</p>
       </div>
     </div>
-  <!-- -----------X------- Main Carousal --------X-------------- -->
-
+  </div>    
   <!-- ------------------ Cards section ----------------------- -->
-   <div class="container mt-5">
-       <div class="row g-3 cards">
-          <div class="col-12 col-md-4" data-aos="flip-left"data-aos-duration="2000">
+  <div class="container mt-5 cards">
+      <div class="row g-3 cards">
+          <p class="cards-title">Objective</p>
+          <div class="col-12 col-md-4" data-aos="flip-left"data-aos-duration="1000">
                 <div class="card">
                     <!-- <img src="assets/Blog-post/blog1.png" class="card-img-top" alt="..."> -->
                     <div class="card-body">
@@ -114,7 +134,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-4" data-aos="flip-left" data-aos-duration="2000">
+            <div class="col-12 col-md-4" data-aos="flip-left" data-aos-duration="3000">
                 <div class="card">
                     <!-- <img src="assets/Blog-post/blog1.png" class="card-img-top" alt="..."> -->
                     <div class="card-body">
@@ -131,40 +151,29 @@
   <!-- ------------X------ Cards section --------X--------------- -->
 
   <!---------------------- About us section ------------ -->
-    <div class="container-fluid mt-5">
-       <div class="row">
-           <div class="col-md-6">
-               <img src="assets/manav/about.jpg" alt="">
-           </div>
-           <div class="col-md-6">
-               <p class="title"><span>About </span>Us</p>
-               <hr>
-               <p>Marketing and Advertising to the Military: One of the Most Attractive Consumer Segments in the U.S.</p>
-               <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
-                </p>
-                <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
-                </p>
-                <p>The Military Market is young and active - in fact, over 43% are between 17-24 years of age. Advertising to the Military is also one of the best ways to engage hard to reach young men - who are very family-oriented (55% are married and 44% have kids).
-                </p>
-                
-           </div>
-       </div>
+    <div class="container-fluid mt-5 about">
+        <div class="row">
+            <!-- <div class="col-md-6">
+                <img src="assets/manav/about.jpg" alt="">
+            </div> -->
+            <div class="col-md-12 p-sm-5 about-content">
+                <p class="title"><span>About </span>Us</p>
+                <hr>
+                <p>Manav Seva Dal is an organization of selfless, selfless, dedicated and disciplined volunteers, who rise above differences of caste, sectarian, religious and spiritual fanaticism, considers human service as their worship, worship and yajan. He is sensitive not only to humans, but also to animals. They are always ready, dynamic and determined to do every kind of service as much as possible. Such is the one who has an innate nature, pride, satisfaction and is imbued with social, secular, national feelings and spiritual qualities, only an organization of volunteers full of such sensitive and analytical personality is truly selfless in the service of human beings and beings. may be moving forward.</p>
+                <p>Service towards living beings is that active expression of love for which there is no personal desire of a social worker because selfless service is the emotional gateway to mental peace, self-knowledge, conduct-satisfaction and self-realization.</p>
+                  <p>For the complete fulfillment of the objectives of the party, the goal of all the members should be "selfless dedicated personality". Ideal leadership and morality, etc., naturally manifest various attractive wonderful qualities in the workers with selfless dedicated personality. With a dedicated personality, there will always be freshness and enthusiasm in the organization. The selfless dedicated personality is the pride of the organization and its character mirror.</p>
+                  <p>This is my message to all the volunteers of Manav Seva Dal that following the manual written in the book, pave such a creative path of selfless service, whose reflection will automatically affect the society and for the creation of an ideal society, the effect of clean ideology should be continuously in motion. Being service-minded people will be attracted to serve in the organization and surely the power of the hardworking volunteers will increase.</p>
+                  <p>Therefore, the members of the organization should present a golden example of social service, which paves the way for selfless service for the future.</p>
+                  <p>Shri Satpal Ji Maharaj</p>
+                  <p>Source: Human Services Team, Manua</p>
+            </div>
+        </div>
     </div>
   <!---------------X------- About us section ------X------------- -->
 
-  <!-- -------------- Manav Sewa dal initiative -------------- -->
-  <div class="container-fluid initiative mt-5">
-    <p class="title">Manav Sewa Dal <span>Initiative</span></p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus aliquam, enim reiciendis velit odio eligendi est iure sed cum repellendus atque eius ullam soluta fuga? Quisquam praesentium delectus voluptates quos facere, exercitationem, eligendi sed eaque sapiente dolore reprehenderit, rerum obcaecati similique. Esse asperiores culpa error corporis quaerat? Blanditiis, tempore consequatur!</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quidem perspiciatis eos animi quibusdam ducimus omnis inventore aut repellat ratione?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusantium reprehenderit assumenda deleniti? Dicta tempore inventore iure quia porro et alias quis. Dolor aspernatur, porro officia ipsum blanditiis magni saepe in non deserunt provident tenetur cupiditate optio, repellendus delectus amet?</p>
-  </div>
-
-  <!-- ---------X----- Manav Sewa dal incestive ------X-------- -->
-
   <!-- -------------- Contribution toword socity ------------- -->
   <div class="container mt-5 socity">
-    <p class="title">Work toword <span>Socity</span></p>
+    <p class="socity-title">Social Initiatives</p>
       <!-- row-1 -->
       <div class="row">
         <!--col-1  -->
@@ -247,18 +256,42 @@
 
   <!-- --------X------ Contribution toword socity -------X------ -->
 
-  <!-- ----------------- Gallary section ------------------- -->
-      <div class="container mt-5 gallery">
-        <p class="title"><span>Our </span>Gallery</p>
-          <div class="owl-carousel owl-theme">
-            <div class="item"><img src="assets/instagram/thumb-card3.png" alt=""></div>
-            <div class="item"><img src="assets/instagram/thumb-card4.png" alt=""></div>
-            <div class="item"><img src="assets/instagram/thumb-card5.png" alt=""></div>
-            <div class="item"><img src="assets/instagram/thumb-card6.png" alt=""></div>
-            <div class="item"><img src="assets/instagram/thumb-card7.png" alt=""></div>
-            <div class="item"><img src="assets/instagram/thumb-card8.png" alt=""></div>
-          </div>
+  <!-- Gallary section -->
+  <div class="container-fluid gallary p-sm-5">
+    <div class="row">
+      <p class="title"><span>Our </span>Gallery</p>
+      <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="../man-se-dal/assets/manav/land1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="../man-se-dal/assets/manav/land1.jpg" width="100%" height="100%" alt="">
+          </a>
       </div>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="../man-se-dal/assets/manav/land2.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="../man-se-dal/assets/manav/land2.jpg" width="100%" height="100%"  alt="">
+        </a>
+      </div>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="../man-se-dal/assets/manav/land3.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="../man-se-dal/assets/manav/land3.jpg" width="100%" height="100%" alt="">
+        </a>
+      </div>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="../man-se-dal/assets/manav/about.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="../man-se-dal/assets/manav/about.jpg" width="100%" height="100%" alt="">
+        </a>
+      </div>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="../man-se-dal/assets/manav/land1.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="../man-se-dal/assets/manav/car1.jpg" width="100%" height="100%" alt="">
+        </a>
+      </div>
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="../man-se-dal/assets/manav/land1.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="../man-se-dal/assets/manav/car2.jpg" width="100%" height="100%"  alt="">
+        </a>
+      </div>
+    </div>
+  </div>
   <!-- ------------X----- Gallary section --------X----------- -->
 
   <!------------------ Contact us ------------------------->
@@ -355,14 +388,7 @@
       </dvi>
   </div>
   <!-- -----------X------ Footer section -------X---------- -->
-
-
-
-  
-
-
-
-    <!-- Jquery js file -->
+  <!-- Jquery js file -->
     <script src="js/jquery.min.js"></script>
     <!-- owl-Carousel js -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -371,6 +397,10 @@
    <!-- Boostrap js file -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.min.proper.js"></script>
+    <!-- google translate -->
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
      <!-- Custom js file -->
      <script src="js/main.js"></script>
 </body>

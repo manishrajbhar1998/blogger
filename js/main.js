@@ -22,6 +22,9 @@ $(document).ready(function(){
   });
 
   AOS.init();
-
 });
+
+function loadGoogleTranslate(){
+  new google.translate.TransalteElement("google_element");
+}
 
