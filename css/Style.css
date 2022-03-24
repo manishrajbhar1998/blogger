@@ -383,7 +383,6 @@ button{
     color: #292d3a;
     border: 2px solid #292d3a;
     background: transparent;
-    font-weight: 800;
 }
 .contact .detail .col-12{
     margin-bottom: 20px;
@@ -403,17 +402,9 @@ button{
     color: #fff;
     font-size: 1.5rem;
     border-radius: 50%;
-    /* margin-top: 10px; */
     margin-right: 20px;
 }
-.contact .detail  button{
-    margin-top: 20px;
-    background-color: #292d3a;
-    margin-bottom: 20px;
-}
-.contact .detail  button i{
-    color: #fff;
-}
+
 
 /* Footer section */
 .footer{
@@ -544,13 +535,29 @@ button{
     .contact form .col1 input{
         width: 100%;
     }
-    
     .contact form .col2 div input{
         width: 100%;
     }
     .contact form .col3 textarea{
         width: 100%;
     }
+    .contact form button{
+        padding: 10px 30px;
+        font-size: 1rem; 
+    }
+    .contact .detail p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .contact .detail .col-12 .fas{
+        padding: 13px 14px;
+        background-color: #292d3a;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
 
 
 }
