@@ -3,14 +3,15 @@
 *{
     margin: 0;
     padding: 0;
+}
+body{
     font-family: robate;
 }
 
 /* Global variables */
 :root{
     --khaki: khaki; 
-    --bg-hight: #1d252b;
-    --bg-dark: #24282c;    
+    --bg-dark: #292d3a;    
 }
 .title{
     color: #fff;
@@ -32,11 +33,12 @@ button{
     font-size: 1.5rem;
 }
 /* ------------------------------------------ */
+
+/* navbar section */
 .navbar{
-    background-color: #292d3a;
+    background-color: var(--bg-dark);
     z-index: 10;
 }
-/* navbar section */
 .navbar-brand img{
     width: 50px;
     height: 50px;
@@ -44,16 +46,15 @@ button{
 }
 /* main banner sectiop */
 .banner{
-    background-color: #292d3a;
+    background-color: var(--bg-dark);
     height: 70vh;
     z-index: 11;
-    
 }
 .banner::after{
     content: "";
     width: 100%;
     height: 80vh;
-    background-color:  #292d3a;
+    background-color:  var(--bg-dark);
     position: absolute;
     top: 0;
     left: 0;
@@ -61,23 +62,24 @@ button{
     z-index: -1;
     
 }
+.banner-img{
+    box-shadow: 10px 5px 15px 2px rgb(27, 27, 27);
+}
 .banner1,.banner2,.banner3{
     width: 100%;
-    height: 75vh;
-    /* border: 2px solid red; */
-    padding: 10px;
+    height: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    /* box-shadow: 10px 5px 15px 2px rgb(27, 27, 27); */
 }
 .banner1 img,.banner2 img,.banner3 img{
     width: 100%;
     height: 70vh;
-    animation: zoom-out 20s linear infinite;
+    animation: zoom-out 5s linear infinite;
 }
 @keyframes zoom-out{
     100%{transform: scale(1.2);}
 }
+
 /* banner-content */
 .banner-content-h1{
     font-size: 4rem;
@@ -85,12 +87,12 @@ button{
 }
 .banner-content-p{
     font-size: 1.5rem;
-    font-style: italic;
-    font-family: poppins;
+    font-family: 'Quicksand', sans-serif;
     color: #fff;
+    font-weight: 300;
 }
-/*  Card section */
 
+/*  our objective section */
 .objective .card{
     background: #fff3f3;
 }
@@ -98,26 +100,28 @@ button{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 .objective .objective-title{
-    color: #1d252b;
+    color: var(--bg-dark);
     font-size: 3rem;
     margin-top: 50px;
     margin-bottom: 0 !important;
+    font-weight: 600;
     
 }
 .objective .objective-sub-title{
-    color: #1d252b;
+    color: var(--bg-dark);
     margin-top: 0;
     font-size: 1rem;
-    
+    font-size: 1.2rem;
 }
 .objective .card-title{
     color: #000;
     font-size: 1.2rem;
+    font-weight: 400;
 }
 .objective .card-text{
-    color: #000;
     text-align: justify;
-    font-weight: 50;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
 }
 .card-body .fas{
     font-size: 5rem;
@@ -125,19 +129,6 @@ button{
     margin: 0 0 5px 20px;
 }
 
-/* About us section */
-.col-md-6{
-    color: #fff;
-}
-.col-md-6 img{
-    
-}
-.col-md-6 span{
-    color: var(--khaki);
-}
-.col-md-6 img{
-    width: 100% ;
-}
 
 /* About us section */
 .about{
@@ -145,11 +136,12 @@ button{
     background-position: center;
     background-attachment: fixed;
 }
-.about .about-content{
-    color: #fff;
-}
 .about .about-content p{
     text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    word-spacing: 3px;
+    color: #fff;
 }
 .about .title{
     margin-bottom: 40px;
@@ -166,22 +158,22 @@ button{
     position: absolute;
     width: 120px;
     height: 10px;
-    /* background-color: gray; */
     border-bottom:3px dashed gray ;
     top: 30%;
     right: -5%;
 }
 .about .card{
-    width: 70%;
-    height: 200px;
+    width: 60%;
+    height: 180px;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: justify; */
+    box-sizing: border-box;
     margin-left: 50px;
     box-shadow: 10px 5px 15px 2px rgb(27, 27, 27);
     margin-bottom: 50px;
-    padding: 0 5px;
+    padding: 20px;
 }
 .about .number-card{
     display: flex;
@@ -198,7 +190,7 @@ button{
     margin-left: 50px;
     color: khaki;
     box-shadow: 10px 5px 15px 2px rgb(27, 27, 27);
-    background-color: #1d252b;
+    background-color: var(--bg-dark);
     z-index: 10;
     border-radius: 50%;
     text-align: center;
@@ -211,16 +203,21 @@ button{
 
 
 /* ------ Work toword socity -------- */
-p.socity-title{
+.socity-title{
     font-size: 3rem;
-    color: #1d252b;
+    color: var(--bg-dark);
+}
+.socity-sub-title{
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
 }
 .socity{
     text-align: center;
-    /* border: 2px solid red; */
+    
 }
 .socity .card{
     position: relative;
+    padding: 20px;
 }
 .socity .card img{
     width: 100%;
@@ -239,7 +236,8 @@ p.socity-title{
 .socity .card .layer:hover{
     background: rgba(24, 44, 75, 0.7);;
 }
-.layer h3,.layer p{
+
+.layer h3{
     width: 100%;
     color: #fff !important;
     padding: 20px;
@@ -249,25 +247,36 @@ p.socity-title{
     transform: translate(-50%);
     opacity: 0;
     transition: 0.5s;
-    
-}
-.fa-arrow-right{
-    /* margin-top: 50px; */
-}
-.layer h3{
-    margin-bottom: 100px;
-}
-.layer:hover h3,.layer:hover p{
-    bottom: 30%;
-    opacity: 1;
-}
-.socity .card-title{
+    text-align: left;
     color: var(--bg-dark);
+    margin-bottom: 50px;
 }
-.socity .card-text{
+.layer p{
+    width: 100%;
+    color: #fff !important;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
     color: var(--bg-hight);
     text-align: justify;
 }
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+    padding: 20px;
+}
+.layer:hover p{
+    bottom: 10%;
+    opacity: 1;
+    
+}
+
 
 /* upcoming event */
 .upcoming{
@@ -278,9 +287,10 @@ p.socity-title{
     border-bottom: 2px solid #fff;
     
 }
-.upcoming .row{
-    /* border: 2px solid red; */
+.upcoming .content p{
+    font-family: 'Quicksand', sans-serif;
 }
+
 
 /* Gallary section */
 .gallary{
@@ -301,7 +311,7 @@ p.socity-title{
 .gallary .view-more{
     text-align: center;
     font-size: 1.2rem;
-    color: #292d3a;
+    color: var(--bg-dark);
     background-color: khaki;
     width: 200px;
     padding: 10px 10px;
@@ -314,7 +324,7 @@ p.socity-title{
 
 /* Contact1 section */
 .contact .title{
-    color: #000;
+    color: #292d3a;
     font-size: 3rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -416,11 +426,12 @@ p.socity-title{
     color: #fff;
 }
 .footer .links .fas{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
 
 }
-.footer .footer-sub{
-    /* border:2px solid #fff; */
+.footer .links a:hover{
+    color: dodgerblue;
 }
 
 @media (max-width:1200px) {
@@ -489,23 +500,24 @@ p.socity-title{
     .subtitle{
         font-size: 1rem;
     }
-    .initiative{
-        text-align: left;
-        padding: 10px;
+    .objective .objective-title{
+        font-size: 2rem;
+        margin-top: 20px;        
+    }
+    .objective .objective-sub-title{
+        color: #1d252b;
+        margin-top: 0;
+        font-size: 1rem;
+        font-size: 1.2rem;
     }
     /* about section */
-    .content-card span{
-        position: absolute;
-        width: 120px;
-        height: 10px;
-        /* background-color: gray; */
-        border-bottom:3px dashed gray ;
-        top: 30%;
-        right: -20%;
+    .about .about-content p{
+        word-spacing: 1.3px;
     }
     .about .card{
         width: 100%;
         margin-left: 0;
+        font-size: 1rem;
     }
     /* contact */
     .contact form .col2{
