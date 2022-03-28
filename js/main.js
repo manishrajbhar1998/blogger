@@ -22,6 +22,20 @@ $(document).ready(function(){
   });
 
   AOS.init();
+
+  
+  $('#read-more1').click(function(){
+    $('.more1').toggle('show');
+  })
+
+  $('#read-more2').click(function(){
+    $('.more2').toggle('show');
+  })
+
+  $('#read-more3').click(function(){
+    $('.more3').toggle('show');
+  })
+
 });
 
 
