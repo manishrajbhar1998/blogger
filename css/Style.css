@@ -45,7 +45,7 @@ button{
 }
 .navbar-brand span{
     font-size: 1.8rem;
-    /* color: khaki; */
+
 }
 .navbar-brand img{
     width: 50px;
@@ -73,12 +73,11 @@ button{
 }
 .banner-img{
     box-shadow: 10px 5px 15px 2px rgb(27, 27, 27);
+    background-color: rebeccapurple;
+    height: 70vh;
 }
 .banner1,.banner2,.banner3{
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    box-sizing: border-box;
 }
 .banner1 img,.banner2 img,.banner3 img{
     width: 100%;
@@ -88,11 +87,10 @@ button{
 @keyframes zoom-out{
     100%{transform: scale(1.2);}
 }
-
 /* banner-content */
 .banner-content-h1{
     font-family: 'Libre Baskerville',serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: khaki;
 }
 .banner-content-p{
@@ -219,6 +217,8 @@ button{
 .about .number p{
     text-align: center;
     margin-top: 18px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
 
 
@@ -463,10 +463,27 @@ button{
 }
 
 @media (max-width:1200px) {
-  
+    /* banner section  */
+    .banner-content-h1{
+    font-size: 3rem;
+}
     
 }
-@media (max-width:1000px) {
+@media (max-width:1050px) {
+    /* navbar */
+    .navbar-brand{
+        font-size: 1.2rem;
+    }
+    .navbar-brand span{
+        font-size: 1.5rem;
+    }
+    .banner::after{
+        height: 90vh;    
+    }
+    /* banner section  */
+    .banner-content-h1{
+    font-size: 2rem;
+}
     /* about section */
     .content-card span{
         position: absolute;
@@ -483,9 +500,29 @@ button{
     }
     
 }
-@media (max-width:768px) {
-       /* about section */
-       .content-card span{
+@media (max-width:800px) {
+    .banner-img{
+        height: 60vh;
+    }
+    .banner1 img,.banner2 img,.banner3 img{
+        width: 100%;
+        height: 60vh;
+        animation: zoom-out 5s linear infinite;
+    }
+    /* banner-content */
+    .banner-content-h1{
+        font-family: 'Libre Baskerville',serif;
+        /* font-size: 3.5rem; */
+        color: khaki;
+    }
+    .banner-content-p{
+        font-size: 1.2rem;
+        font-family: 'Quicksand', sans-serif;
+        color: #fff;
+        font-weight: 300;
+    }
+    /* about section */
+    .content-card span{
         position: absolute;
         width: 120px;
         height: 10px;
@@ -497,22 +534,32 @@ button{
         width: 100%;
         margin-left: 0;
     }
+    .about .number p{
+        font-size: 1.3rem;
+    }
     
 }
-@media (max-width:520px) {
+@media (max-width:550px) {
+    /* navbar */
+    .navbar-brand{
+        font-size: 0.9rem;
+    }
+    .navbar-brand span{
+        font-size: 1.1rem;
+    }
     /* main banner */
     .banner{
         height: 100vh;
     }
-    .banner1,.banner2,.banner3{
-        height: 50vh;
     
-    }
+   .banner-img{
+       height: 50vh;
+   }
     .banner1 img,.banner2 img,.banner3 img{
         width: 100%;
         height: 50vh;
-        animation: zoom-out 7s linear infinite;
-    }
+        
+    } 
     /* banner-content */
     .banner-content-h1{
         font-size: 2rem;
@@ -545,9 +592,11 @@ button{
     .about .card{
         width: 100%;
         margin-left: 0;
-        font-size: 0.8rem;
-        padding: 5px;
-        text-align: justify;
+        font-size: 0.9rem;
+        padding:0 5px;
+        text-align: left;
+        height: 120px;
+        color: #000;
     }
     /* social inisetive */
     .socity-title{
@@ -558,6 +607,46 @@ button{
         font-size: 1.2rem;
         font-family: 'Quicksand', sans-serif;
         text-align: justify;
+    }
+    .layer h3{
+        width: 100%;
+        color: #fff !important;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 0;
+        transition: 0.5s;
+        text-align: left;
+        color: var(--bg-dark);
+        /* margin-bottom: 50px; */
+    }
+    .layer p{
+        width: 100%;
+        color: #fff !important;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        opacity: 0;
+        transition: 0.5s;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        color: var(--bg-hight);
+        text-align: justify;
+        /* border-top: 2px solid #FFF; */
+    }
+    .layer:hover h3{
+        bottom: 30%;
+        opacity: 1;
+        padding: 20px;
+    }
+    .layer:hover p{
+        bottom: 0%;
+        opacity: 1;
+        
     }
     /* contact */
     .contact form .col2{
