@@ -552,9 +552,9 @@ button{
         height: 100vh;
     }
     
-   .banner-img{
-       height: 50vh;
-   }
+    .banner-img{
+        height: 50vh;
+    }
     .banner1 img,.banner2 img,.banner3 img{
         width: 100%;
         height: 50vh;
@@ -595,8 +595,15 @@ button{
         font-size: 0.9rem;
         padding:0 5px;
         text-align: left;
-        height: 150px;
         color: #000;
+    }
+    .about .number{
+        height: 70px;
+        width: 70px;
+    }
+    .about .number p{
+        font-size: 1rem;
+        
     }
     /* social inisetive */
     .socity-title{
